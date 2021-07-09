@@ -49,7 +49,3 @@ router.post(
 );
 
 export { router as createTransactionRouter };
-
-// Get involved
-// More team work
-// Tasks I can be doing

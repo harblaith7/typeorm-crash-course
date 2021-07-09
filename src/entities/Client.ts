@@ -42,7 +42,9 @@ export class Client extends Person {
 	@UpdateDateColumn()
 	updated_at: Date;
 
-	@ManyToMany((type) => Banker)
+	@ManyToMany((type) => Banker, {
+		cascade: true,
+	})
 	bankers: Banker[];
 
 	@OneToMany(
